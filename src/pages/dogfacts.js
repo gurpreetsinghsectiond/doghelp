@@ -25,7 +25,6 @@ export default function DogFacts() {
     }
   };
 
-  // Initial load
   useEffect(() => {
     loadNewCards();
   }, []);
