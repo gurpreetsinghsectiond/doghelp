@@ -1,0 +1,169 @@
+.card {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  background-color: white;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card_image_container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.card_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .card_image {
+  transform: scale(1.05);
+}
+
+.card_content {
+  padding: 16px;
+}
+
+.card_title {
+  margin: 0 0 10px;
+  color: #A62C2C;
+  font-size: 1.2rem;
+}
+
+.card_fact {
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+  color: #555;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.learn_more_btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: transparent;
+  color: #A62C2C;
+  border: 1px solid #A62C2C;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.learn_more_btn:hover {
+  background-color: #A62C2C;
+  color: white;
+}
+
+.paw_icon {
+  font-size: 0.9rem;
+}
+
+/* Modal Styles */
+.modal_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.modal {
+  background-color: white;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 900px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.close_btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  color: #A62C2C;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.modal_content {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .modal_content {
+    flex-direction: row;
+  }
+}
+
+.modal_image_container {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .modal_image_container {
+    width: 40%;
+    height: auto;
+    max-height: 500px;
+  }
+}
+
+.modal_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal_info {
+  padding: 20px;
+  flex: 1;
+}
+
+.modal_title {
+  color: #A62C2C;
+  margin-bottom: 16px;
+  font-size: 1.8rem;
+}
+
+.modal_fact {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.modal_description h3 {
+  color: #A62C2C;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.modal_description p {
+  line-height: 1.6;
+} 

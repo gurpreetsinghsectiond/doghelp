@@ -1,0 +1,268 @@
+.contact_container {
+  padding: 0;
+  max-width: 100%;
+}
+
+.hero_section {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 3rem;
+}
+
+.hero_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+.hero_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  width: 80%;
+  max-width: 800px;
+  z-index: 2;
+}
+
+.hero_title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hero_subtitle {
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.main_content {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem 4rem;
+}
+
+@media (min-width: 768px) {
+  .main_content {
+    flex-direction: row;
+    gap: 4rem;
+  }
+}
+
+.form_section {
+  flex: 1;
+}
+
+.section_title {
+  color: #A62C2C;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+  display: inline-block;
+}
+
+.section_title:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 60px;
+  height: 3px;
+  background-color: #EA7300;
+}
+
+.contact_form {
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form_group {
+  margin-bottom: 1.5rem;
+}
+
+.form_label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.form_input, 
+.form_textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form_input:focus, 
+.form_textarea:focus {
+  border-color: #A62C2C;
+  outline: none;
+}
+
+.form_textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.submit_button {
+  background-color: #A62C2C;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.submit_button:hover {
+  background-color: #E83F25;
+}
+
+.submit_button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.form_error {
+  color: #E83F25;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.form_success {
+  background-color: rgba(75, 181, 67, 0.1);
+  border-left: 4px solid #4BB543;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0 4px 4px 0;
+}
+
+.form_error_message {
+  background-color: rgba(232, 63, 37, 0.1);
+  border-left: 4px solid #E83F25;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0 4px 4px 0;
+}
+
+.info_section {
+  margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+  .info_section {
+    flex: 0 0 350px;
+    margin-top: 0;
+  }
+}
+
+.contact_info {
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.info_item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.info_item:last-child {
+  margin-bottom: 0;
+}
+
+.info_icon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(166, 44, 44, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  color: #A62C2C;
+  font-size: 1.2rem;
+}
+
+.info_text {
+  flex-grow: 1;
+}
+
+.info_title {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.25rem;
+}
+
+.info_content {
+  color: #666;
+  line-height: 1.5;
+}
+
+.info_link {
+  color: #A62C2C;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.info_link:hover {
+  color: #E83F25;
+  text-decoration: underline;
+}
+
+.social_links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social_link {
+  width: 40px;
+  height: 40px;
+  background-color: #A62C2C;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.social_link:hover {
+  background-color: #E83F25;
+}
+
+.spinner {
+  display: inline-block;
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+} 
