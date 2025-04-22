@@ -23,7 +23,7 @@ const Card = ({ title, image, fact, description }) => {
           <h3 className={styles.card_title}>{title}</h3>
           <p className={styles.card_fact}>{fact}</p>
           <button className={styles.learn_more_btn}>
-            <FaPaw className={styles.paw_icon} /> Learn More
+            <FaPaw className={styles.paw_icon} /> Learn More 
           </button>
         </div>
       </div>

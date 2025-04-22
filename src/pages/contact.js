@@ -202,7 +202,7 @@ export default function Contact() {
                   <p className={styles.info_content}>
                     Monday - Friday: 9am - 5pm<br />
                     Saturday: 10am - 2pm<br />
-                    Sunday: Closed
+                    Sunday: Closed 
                   </p>
                 </div>
               </div>
