@@ -13,7 +13,7 @@ Contact forms with [EmailJS](https://www.emailjs.com/) integration
 Pixabay API was used to get data about dogs such as facts and their images.
 User-friendly form validation using React Hook Form
 Fast rendering with Next.js and React
-Clean UI with support for icons via React Icons
+Clean UI with support for icons via React Icons 
 
 TECHNOLOGIES USED 
 
