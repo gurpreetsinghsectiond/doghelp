@@ -29,11 +29,11 @@ Effective colors are used in the css file for effectiveness.
 
 TECH STACK 
 
-[Next.js](https://nextjs.org/)
-[React](https://reactjs.org/)
-[React Hook Form](https://react-hook-form.com/)
-[EmailJS](https://www.emailjs.com/)
-[React Icons](https://react-icons.github.io/react-icons/)
+[Next.js]
+[React]
+[React Hook Form]
+[EmailJS]
+[React Icons]
 
 GET START
 npm run dev 
